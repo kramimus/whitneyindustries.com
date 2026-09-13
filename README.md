@@ -18,7 +18,7 @@ Static two-page site required by Google to publish the `mwgoobot@gmail.com` OAut
 ### 0. Apex vs subdomain (decision)
 Default here: **apex** (`https://whitneyindustries.com`). If you'd rather keep the apex
 free for a future "real" site, use `bot.whitneyindustries.com` instead: edit `CNAME` to
-match, and in step 2 add `CNAME bot → <username>.github.io.` instead of A records.
+match, and in step 2 add `CNAME bot → kramimus.github.io.` instead of A records.
 
 ### 1. GitHub Pages
 ```bash
@@ -39,7 +39,7 @@ Delete any parking/redirect records Namecheap added, then add:
 | A | `@` | `185.199.109.153` | Automatic |
 | A | `@` | `185.199.110.153` | Automatic |
 | A | `@` | `185.199.111.153` | Automatic |
-| CNAME | `www` | `<username>.github.io.` | Automatic |
+| CNAME | `www` | `kramimus.github.io.` | Automatic |
 
 Verify: `dig +short whitneyindustries.com` returns the four 185.199.x.x addresses
 (propagation usually 5–30 min).
