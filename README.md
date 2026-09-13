@@ -1,4 +1,4 @@
-# whitneyindustries.com — OAuth branding site for MW Goo Bot
+# whitneyindustries.com — OAuth branding site for Goo Bot
 
 Static two-page site required by Google to publish the `mwgoobot@gmail.com` OAuth app
 (the one `gog` uses) to production. Publishing kills the 7-day refresh-token expiry.
@@ -12,6 +12,8 @@ Static two-page site required by Google to publish the `mwgoobot@gmail.com` OAut
 | `index.html` | App homepage (describes the app — Google requires this) |
 | `privacy.html` | Privacy policy (discloses Google-data access — required) |
 | `CNAME` | GitHub Pages custom-domain binding (currently `whitneyindustries.com`) |
+
+> Note: no personal names/initials on the site — it's branded "Goo Bot" only.
 
 ## Publish runbook
 
@@ -54,7 +56,7 @@ Verify: `dig +short whitneyindustries.com` returns the four 185.199.x.x addresse
 ### 4. GCP wiring (the project that owns the gog OAuth client)
 Console → **Google Auth Platform / APIs & Services → OAuth consent screen (Branding)**:
 
-- App name: `MW Goo Bot`
+- App name: `Goo Bot`
 - User support email: `mwgoobot@gmail.com` (or your personal — must be a real inbox)
 - Application homepage: `https://whitneyindustries.com`
 - Privacy policy link: `https://whitneyindustries.com/privacy.html`
